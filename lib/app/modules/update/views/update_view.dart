@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
+
 import 'package:get/get.dart';
-import '../controllers/create_controller.dart';
 
-class CreateView extends GetView<CreateController> {
-  const CreateView({super.key});
+import '../controllers/update_controller.dart';
 
+class UpdateView extends GetView<UpdateController> {
+  const UpdateView({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -62,17 +63,6 @@ class CreateView extends GetView<CreateController> {
                 onPressed: () {
                   // controller.simpanData();
                 },
-                style: ElevatedButton.styleFrom(
-                  backgroundColor: Colors.blue,
-                  foregroundColor: Colors.white,
-                  padding: const EdgeInsets.symmetric(
-                    horizontal: 24,
-                    vertical: 12,
-                  ),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(12),
-                  ),
-                ),
                 child: const Text('Simpan'),
               ),
             ),
